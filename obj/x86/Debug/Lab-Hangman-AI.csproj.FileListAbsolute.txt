@@ -1,0 +1,6 @@
+/Users/Steve/Projects/Lab-Hangman-AI/obj/x86/Debug/Lab-Hangman-AI.csprojAssemblyReference.cache
+/Users/Steve/Projects/Lab-Hangman-AI/obj/x86/Debug/Lab-Hangman-AI.csproj.CoreCompileInputs.cache
+/Users/Steve/Projects/Lab-Hangman-AI/bin/Debug/Lab-Hangman-AI.exe
+/Users/Steve/Projects/Lab-Hangman-AI/bin/Debug/Lab-Hangman-AI.pdb
+/Users/Steve/Projects/Lab-Hangman-AI/obj/x86/Debug/Lab-Hangman-AI.exe
+/Users/Steve/Projects/Lab-Hangman-AI/obj/x86/Debug/Lab-Hangman-AI.pdb

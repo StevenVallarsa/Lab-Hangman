@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab-Hangman-AI", "Lab-Hangman-AI.csproj", "{D6EEA844-4B26-437D-8EF2-A84E0B5EFC77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6EEA844-4B26-437D-8EF2-A84E0B5EFC77}.Debug|x86.ActiveCfg = Debug|x86
+		{D6EEA844-4B26-437D-8EF2-A84E0B5EFC77}.Debug|x86.Build.0 = Debug|x86
+		{D6EEA844-4B26-437D-8EF2-A84E0B5EFC77}.Release|x86.ActiveCfg = Release|x86
+		{D6EEA844-4B26-437D-8EF2-A84E0B5EFC77}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

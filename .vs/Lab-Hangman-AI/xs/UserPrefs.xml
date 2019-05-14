@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{D6EEA844-4B26-437D-8EF2-A84E0B5EFC77}|Default">
+  <MonoDevelop.Ide.ItemProperties.Lab-Hangman-AI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="24" Column="46" />
+      <File FileName="HangmanGame.cs" Line="105" Column="25" />
+      <File FileName="Player.cs" Line="11" Column="24" />
+      <File FileName="ABCplayer.cs" Line="22" Column="45" />
+      <File FileName="BruteForcePlayer.cs" Line="14" Column="10" />
+      <File FileName="HumanPlayer.cs" Line="7" Column="28" />
+      <File FileName="SmartyPlayer.cs" Line="14" Column="52" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lab-Hangman-AI" expanded="True">
+            <Node name="Lab-Hangman-AI" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

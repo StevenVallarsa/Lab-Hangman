@@ -10,12 +10,11 @@ namespace HangManStarterKit
     {
         static void Main(string[] args)
         {
-            List<Player> players = new List<Player>();
-
-            players.Add(new ABCplayer());
-            players.Add(new BruteForcePlayer());
-            players.Add(new HumanPlayer());
-            players.Add(new SmartyPlayer());
+            //List<Player> players = new List<Player>();
+            //players.Add(new ABCplayer());
+            //players.Add(new BruteForcePlayer());
+            //players.Add(new HumanPlayer());
+            //players.Add(new SmartyPlayer());
 
             // foreach loop to itterate through the four players
             // each player will play 10 games, adding their tries together as they go
@@ -24,28 +23,71 @@ namespace HangManStarterKit
 
             List<int> playerAveragedResults = new List<int>();
 
-            foreach (Player p in players)
+            int accumulatedTotal = 0;
+
+            for (int i = 0; i < 10; i++)
             {
-                int acculatedTotal = 0;
-
-                for (int i = 0; i < 10; i++)
-                {
-
-                    HangmanGame hg = new HangmanGame(p);
-                    int result = hg.ReturnResult();
-                    acculatedTotal += result;
-                }
-
-                playerAveragedResults.Add(acculatedTotal);
-
+                Player p = new ABCplayer();
+                HangmanGame hg = new HangmanGame(p);
+                int result = hg.ReturnResult();
+                accumulatedTotal += result;
             }
 
-            List<string> playerNames = new List<string>() { "ABC Player", "Brute Force Player", "Human Player", "Smarty Player" };
+            playerAveragedResults.Add(accumulatedTotal / 10);
+
+            accumulatedTotal = 0;
+
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                Player p = new BruteForcePlayer();
+                HangmanGame hg = new HangmanGame(p);
+                int result = hg.ReturnResult();
+                accumulatedTotal += result;
+            }
+
+            playerAveragedResults.Add(accumulatedTotal / 10);
+
+            accumulatedTotal = 0;
+
+
+
+            for (int i = 0; i < 2; i++)
+            {
+                Player p = new HumanPlayer();
+                HangmanGame hg = new HangmanGame(p);
+                int result = hg.ReturnResult();
+                accumulatedTotal += result;
+            }
+
+            playerAveragedResults.Add(accumulatedTotal / 2);
+
+            accumulatedTotal = 0;
+
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                Player p = new SmartyPlayer();
+                HangmanGame hg = new HangmanGame(p);
+                int result = hg.ReturnResult();
+                accumulatedTotal += result;
+            }
+
+            playerAveragedResults.Add(accumulatedTotal / 10);
+
+
+
+
+            List<string> playerNames = new List<string>() 
+            { "ABC Player", "Brute Force Player", "Human Player", "Smarty Player" };
 
             Console.WriteLine();
+            Console.WriteLine("Average number of attempts per game by player type:");
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine($"{playerAveragedResults[i] / 10, 20} : {playerAveragedResults}");
+                Console.WriteLine($"{playerNames[i], 20} : {playerAveragedResults[i]}");
             }
 
 

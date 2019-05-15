@@ -15,16 +15,14 @@ namespace HangManStarterKit
         public List<char> foundLetters = new List<char>();
         List<string> wordBank = new List<string>{"fish","apple","tree", "dog", "rides", "scrambled" };
         Player guesser;
+        int attempt = 0;
+
         public HangmanGame(Player guesser)
         {
             this.guesser = guesser;
             Random r = new Random();
             int index = r.Next(0,wordBank.Count);
             word = wordBank[index];
-
-            foundLetters.Clear();
-            guessedLetters.Clear();
-            tries = 0;
 
             Setup();
         }
@@ -33,10 +31,6 @@ namespace HangManStarterKit
         {
             this.guesser = guesser;
             this.word = word;
-
-            foundLetters.Clear();
-            guessedLetters.Clear();
-            tries = 0;
 
             Setup();
         }
@@ -77,6 +71,7 @@ namespace HangManStarterKit
                 }
             }
             Console.WriteLine("You won! Good Job!");
+            attempt++;
             return true;
         }
 
@@ -115,8 +110,12 @@ namespace HangManStarterKit
                 //guessedLetters list
                 guessedLetters.Add(guess);
             }
-            Console.WriteLine("Press ENTER to continue");
-            Console.ReadLine();
+            // DELETED
+            // deleted this pause to make the computer players run without human intervention
+            // but it clears the above responses for the human player.
+
+            //Console.WriteLine("Press ENTER to continue");
+            //Console.ReadLine();
             Console.Clear();
              
         }
@@ -129,6 +128,14 @@ namespace HangManStarterKit
             }
             Console.WriteLine();
             Console.WriteLine("You have guessed: {0} times", tries);
+
+            // ADDED
+            // prints out letters already guessed
+            foreach(char c in guessedLetters)
+            {
+                Console.Write(c + " ");
+            }
+            Console.WriteLine();
 
 
         }

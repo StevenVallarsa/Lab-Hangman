@@ -10,7 +10,7 @@ namespace HangManStarterKit
     {
         Random r = new Random();
         string alphabet = "abcdefghijklmnopqrstuvwxyz";
-        List<int> usedLetterIndexes = new List<int>();
+        public List<int> usedLetterIndexes = new List<int>();
 
         public override char Guess()
         {

@@ -40,6 +40,7 @@
     <Compile Include="Player.cs" />
     <Compile Include="BruteForcePlayer.cs" />
     <Compile Include="SmartyPlayer.cs" />
+    <Compile Include="EmptyClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Lab-Hangman-AI.csproj.user" />

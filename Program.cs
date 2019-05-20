@@ -11,7 +11,14 @@ namespace HangManStarterKit
         static void Main(string[] args)
         {
             //List<Player> players = new List<Player>();
-            //players.Add(new ABCplayer());
+            //Player p = new EmptyClass();
+
+            //for (int i = 0; i < 10; i++)
+            //{
+
+            //    HangmanGame hg = new HangmanGame(new EmptyClass());
+            //}
+
             //players.Add(new BruteForcePlayer());
             //players.Add(new HumanPlayer());
             //players.Add(new SmartyPlayer());
@@ -52,7 +59,7 @@ namespace HangManStarterKit
             accumulatedTotal = 0;
 
 
-
+            // play human player twice since who has time for ten hole games?
             for (int i = 0; i < 2; i++)
             {
                 Player p = new HumanPlayer();
